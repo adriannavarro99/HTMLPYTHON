@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PLAY</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+
+
+
+<body>
+    <h1>Students</h1>
+
+    <div class="container"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Fist Name</th>
+                    <th>Last Name</th>
+                    <th>Full Name</th>
+                </tr>
+    
+            </thead> 
+            
+            <tbody>
+                <tr>
+                    {% for users in users %}
+                    
+                    <td>{{ users['first_name'] }} </td>
+                    <td>{{ users['last_name'] }} </td>
+                    <td>{{ users['first_name'],users['last_name'] }}</td>
+                </tr>
+                {% endfor %}
+                </td>
+                </tr>
+    
+            </tbody>
+                
+            
+        </table>
+
+    </div>
+
+    
+</body>
+</html>
+
+
